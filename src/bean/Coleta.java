@@ -6,18 +6,18 @@ public class Coleta {
     private Nave nave;
     private Detrito detrito;
     private String dataColeta;
-    private String localizacaOrbital;
+    private String localizacaoOrbital;
 
     //Contrutor Vazio
     public Coleta() {
     }
 
     //Construtor Cheio
-    public Coleta(Nave nave, Detrito detrito, String dataColeta, String localizacaOrbital) {
+    public Coleta(Nave nave, Detrito detrito, String dataColeta, String localizacaoOrbital) {
         this.nave = nave;
         this.detrito = detrito;
         this.dataColeta = dataColeta;
-        this.localizacaOrbital = localizacaOrbital;
+        this.localizacaoOrbital = localizacaoOrbital;
     }
     //Getters e Setters
     public Nave getNave() {return nave;}
@@ -29,8 +29,18 @@ public class Coleta {
     public String getDataColeta() {return dataColeta;}
     public void setDataColeta(String dataColeta) {this.dataColeta = dataColeta;}
 
-    public String getLocalizacaOrbital() {return localizacaOrbital;}
-    public void setLocalizacaOrbital(String localizacaOrbital) {
-        this.localizacaOrbital = localizacaOrbital;}
+    public String getLocalizacaoOrbital() {return localizacaoOrbital;}
+    public void setLocalizacaoOrbital(String localizacaOrbital) {
+        this.localizacaoOrbital = localizacaOrbital;}
+
+    //ToString
+    public String toString(){
+        return "Coleta{" +
+                "nave=" + nave.getNome() +
+                ", detrito=" + detrito.getCodigo() +
+                ", dataColeta='" + dataColeta + '\'' +
+                ", localizacaoOrbital='" + localizacaoOrbital + '\'' +
+                '}';
+    }
 
 }
