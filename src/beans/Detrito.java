@@ -53,4 +53,13 @@ public class Detrito {
                 ", material='" + material.getNome() + '\'' +
                 '}';
     }
+
+    //Metodos da Classe
+
+    //Classifica tamanho do detrito
+    public String classificarTamanho() {
+        if (tamanho < 0.1) return "Pequeno";
+        else if (tamanho < 1.0) return "Médio";
+        else return "Grande";
+    }
 }
