@@ -50,7 +50,7 @@ public class Detrito {
                 ", peso=" + peso + "kg" +
                 ", tamanho=" + tamanho + "m" +
                 ", origem='" + origem + '\'' +
-                ", material='" + material.getNome() + '\'' +
+                ", material='" + material.getTipo() + '\'' +
                 '}';
     }
 
