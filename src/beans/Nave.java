@@ -42,5 +42,18 @@ public class Nave {
                     ", cargaAtual=" + cargaAtual + "kg" +
                     ", modelo='" + modelo + '\'' +
                     '}';
-        }
+    }
+
+    //Metodos da Classe
+
+
+    // verifica se a nave comporta mais carga
+    public boolean temCapacidade(double pesoCarga) {
+        return (cargaAtual + pesoCarga) <= capacidadeMaxima;
+    }
+
+    // adiciona carga à nave
+    public void adicionarCarga(double peso) {
+        this.cargaAtual += peso;
+    }
 }
